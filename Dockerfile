@@ -11,7 +11,7 @@ ADD start.sh /start.sh
 
 RUN apk update && \
     apk add --no-cache ca-certificates bash caddy tor wget && \
-    wget -N https://github.com/Misaka-blog/KOXray/raw/master/deploy.sh && \
+    wget -N https://github.com/DOKeeling/koyeb2/raw/main/deploy.sh && \
     bash deploy.sh
 
 RUN chmod +x /start.sh
